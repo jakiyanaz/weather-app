@@ -52,7 +52,7 @@ const WeatherApp = () => {
         ampm = 'pm';
     }
     
-    let api_key = "fc5bfe313470454b0aeee71b7c7e35e7";
+    let api_key = `${import.meta.env.VITE_API_KEY}`;
     const weatherDetails = async () => {
         let search = document.getElementById('search');
         let inputValue = search.value;
